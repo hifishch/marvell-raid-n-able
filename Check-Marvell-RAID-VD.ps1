@@ -1,7 +1,7 @@
-﻿#Powershell Marvell RAID VD-Check for Solarwinds RMM
+#Powershell Marvell RAID VD-Check for Solarwinds RMM
 #Author: Andreas Walker a.walker@glaronia.ch
 #Licence: GNU General Public License v3.0
-#Version: 1.0.1 / 16.03.2021
+#Version: 1.0.2 / 04.04.2021
 
 Param (
 [Parameter(Mandatory=$true)][int]$vdid
@@ -9,7 +9,7 @@ Param (
 
 $cli = "C:\Program Files (x86)\Marvell\storage\interface\mvsetup.exe"
 
-#Check if MatvellCLI is installed.
+#Check if MarvellCLI is installed.
 if (!(Test-Path $cli))
     {
     Write-Host 'ERROR - Missing MarvellCLI! Please Download from https://support.hpe.com/hpsc/swd/public/detail?swItemId=MTX_17d87af242a144cbb3a954352c&swEnvO'
