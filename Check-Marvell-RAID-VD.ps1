@@ -1,10 +1,10 @@
 #Powershell Marvell RAID VD-Check for N-able RMM
 #Author: Andreas Walker a.walker@glaronia.ch
 #Licence: GNU General Public License v3.0
-#Version: 1.0.3 / 12.08.2021
+#Version: 1.0.4 / 12.08.2021
 
 Param (
-[Parameter(Mandatory=$true)][int]$vdid
+[int]$vdid
 )
 
 $cli = "C:\Program Files (x86)\Marvell\storage\interface\mvsetup.exe"
@@ -39,7 +39,7 @@ if ($Status -ne 'functional')
         {
         Write-Host 'OK - Virtual Disk' $vdid 'has status'$Status
         $Result
-        exit 1
+        exit 0
         }
 
 #Catch unexpected end of script
