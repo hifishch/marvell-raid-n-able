@@ -1,7 +1,7 @@
-#Powershell Marvell RAID VD-Check for Solarwinds RMM
+#Powershell Marvell RAID VD-Check for N-able RMM
 #Author: Andreas Walker a.walker@glaronia.ch
 #Licence: GNU General Public License v3.0
-#Version: 1.0.2 / 04.04.2021
+#Version: 1.0.3 / 12.08.2021
 
 Param (
 [Parameter(Mandatory=$true)][int]$vdid
